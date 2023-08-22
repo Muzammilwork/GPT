@@ -29,23 +29,23 @@ export default function Chat() {
           ))}
       </ul>
 
-      <div className="fixed-bottom">
-        <form onSubmit={handleSubmit} className="flex gap-4">
-          <input
-            className="w-full border rounded-xl border-slate/50 py-2 px-4"
-            placeholder="Say something..."
-            value={input}
-            onChange={handleInputChange}
-          />
-          <button
-            className="bg-indigo-500 text-white font-semibold shadow rounded-full px-4 disabled:bg-indigo-500/50"
-            type="submit"
-            disabled={isLoading}
-          >
-            Send
-          </button>
-        </form>
-      </div>
+
+      <form onSubmit={handleSubmit} className="flex gap-4">
+        <input
+          className="w-full border rounded-xl border-slate/50 py-2 px-4"
+          placeholder="Say something..."
+          value={input}
+          onChange={handleInputChange}
+        />
+        <button
+          className="bg-indigo-500 text-white font-semibold shadow rounded-full px-4 disabled:bg-indigo-500/50"
+          type="submit"
+          disabled={isLoading}
+        >
+          Send
+        </button>
+      </form>
+
 
     </div>
   )
